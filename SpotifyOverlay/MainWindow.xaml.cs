@@ -60,8 +60,8 @@ namespace SpotifyOverlay
                 string title = scraper.GetSpotifyTrackInfo();
                 if (title == "No track is playing")
                 {
-                    Dispatcher.Invoke(DispatcherPriority.Normal, new Action<Label, string>(SetValue), ArtistLabel, "");
-                    Dispatcher.Invoke(DispatcherPriority.Normal, new Action<Label, string>(SetValue), SongLabel, "");
+                    Dispatcher.Invoke(DispatcherPriority.Normal, new Action<Label, string>(SetValue), ArtistLabel, "No track is playing");
+                    Dispatcher.Invoke(DispatcherPriority.Normal, new Action<Label, string>(SetValue), SongLabel, "right now");
                 }
                 else
                 {
